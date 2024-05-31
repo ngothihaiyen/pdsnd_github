@@ -1,6 +1,9 @@
 import time # Importing time for time-related operations.
 import pandas as pd # Importing pandas as pd for data manipulation.
 import numpy as np # Importing numpy as np for numerical computing.
+import time
+import pandas as pd
+import numpy as np
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -42,6 +45,24 @@ def get_filters():
             break
         else:
             print('Please enter an valid day of the week or "all".')
+    
+    # Input for city
+    city = input('Which city\'s data would you prefer to analyze: Chicago, New York City, or Washington?\n').lower()
+    while city not in ('chicago', 'new york city', 'washington'):
+        city = input('Please enter a valid city name (Chicago, New York City, or Washington).\n').lower()
+    print('The city you choose is', city.title())
+
+    # Input for month
+    month = input('Which month\'s data would you prefer to analyze: choose from January to June or "all".\n').lower()
+    while month not in ('all', 'january', 'february', 'march', 'april', 'may', 'june'):
+        month = input('Please enter a valid month from January to June or "all".\n').lower()
+    print('The month you choose is', month)
+
+    # Input for day
+    day = input('Which day\'s data would you prefer to analyze: choose a day of the week or "all".\n').lower()
+    while day not in ('all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'):
+        day = input('Please enter a valid day of the week or "all".\n').lower()
+    print('The day you choose is', day)
 
     print('-'*40)
     return city, month, day

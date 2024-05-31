@@ -13,7 +13,14 @@ To run the script, you need the following dependencies installed:
 - Language: Python 3.x
 - Libraries: pandas, numpy
 
-## Raw data file
+### Date created
+Project submission date: May 18, 2024
+
+### Project Title
+Bikeshare Data Analysis
+
+
+### Files used
 - chicago.cvs
 - new_york_city.cvs
 - washington.cvs
@@ -21,6 +28,8 @@ To run the script, you need the following dependencies installed:
 ## Installation
 1. **Clone the Repository:**
    git clone https://github.com/yourusername/pdsnd_github.git
+### Credits
+N/A
 
 2. **Go to the Folder:**
    cd pdsnd_github
