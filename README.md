@@ -41,3 +41,6 @@ To analyze bike rides in New York City in January on Sundays, run the script and
 ## Additional Information
 - Project Purpose: This project is part of the Udacity Programming for Data Science with Python Nanodegree.
 - Source Data: The bikeshare data for Chicago, New York City, and Washington is provided by Udacity.
+
+## Author
+NGO THI HAI YEN
